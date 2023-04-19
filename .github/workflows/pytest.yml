@@ -30,9 +30,3 @@ jobs:
       - name: Test with pytest
         run: |
           pytest -q
-          
-      # typos check
-      - name: Checkout Actions Repository
-        uses: actions/checkout@v2
-      - name: Check spelling
-        uses: crate-ci/typos@master
